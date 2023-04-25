@@ -18,3 +18,12 @@ FUTURE
 -UI Advanced
 --Wireframe
 --Build in React
+
+
+
+
+=====
+
+Form interactions
+-HTML submit target is queries.php
+-Queries.php queries backend. Backend processes query, returns HTML containing query results. JS inserts this HTML into page

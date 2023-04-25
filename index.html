@@ -1,5 +1,39 @@
-<html>
-<body>
-    Bleh
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Virtual Innkeeper - an AI NPC tool for tabletop games</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Virtual Innkeeper</h1>
+
+    <!-- Form managed by npcGenerate.js -->
+    <form name="generate" id="generateForm" method="post">        
+        Name: <input type="text" name="name"><br>
+        Species: <input type="text" name="species"><br>
+        Job: <input type="text" name="job"><br>
+        Visual Description: <input type="text" name="description"><br>
+        Personality: <input type="text" name="personality"><br>       
+        <input type="submit" value="Generate" id="generateButton">
+    </form>
+
+    <!-- Initial contents managed by npcGenerate.js -->
+    <div id="npc-container">
+        <!-- Content changes managedby npcInteract.js -->
+
+        <!-- NPC image and interactions rendered here -->
+
+        <!-- Form managed by npcInteract.js -->
+        <form name="speak" method="post">
+            <input type="text" name="userInput" placeholder="Say something">
+            <input type="submit" value="Speak">
+        </form>
+    </div>    
 </body>
+
+<script src="scripts/npcGenerate.js" type="application/javascript"></script>
+
 </html>
