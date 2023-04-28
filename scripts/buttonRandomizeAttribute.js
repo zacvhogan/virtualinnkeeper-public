@@ -24,21 +24,19 @@ function buttonInit(button){
 
 async function buttonClick(button){
     
-    let field = button.previousElementSibling;
+    let field = button.previousElementSibling;    
 
     // Open file that contains list of options        
     let response = await fetch(`data/character_generation/${field.name}.txt`);
-    let optionList = await response.text();
-    console.log(response);
+    let optionList = await response.text();  
 
     // Option list to array
     optionList = optionList.split("\n");   
-    console.log(optionList);
     
     // Pick an option at random
     // TODO: rewrite this to ensure previous value changes EVERY time - no duplicates. Will result in better UX.
     let index = Math.round(Math.random() * (optionList.length - 1));
-    let option = optionList[index];   
+    let option = optionList[index];    
    
     // Assign option to input field
     field.value = option;

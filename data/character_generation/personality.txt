@@ -1,0 +1,6 @@
+Angry
+Happy
+Scared
+Sad 
+Cold
+Distant
