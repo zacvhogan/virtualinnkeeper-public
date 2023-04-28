@@ -1,0 +1,34 @@
+Innkeeper
+Barkeeper
+Hunter
+Butcher
+Baker
+Merchant
+Travelling Merchant
+King
+Lord
+Queen
+Dutchess
+Assassin
+Soldier
+Warrior
+Priest
+Farmer
+Mayor
+Guard
+Witch Hunter
+Wizard
+Dark Wizard
+Horsehand
+Farmhand
+Builder
+Concubine
+Butler
+Clerk
+Boatman
+Fisherman
+Brewer
+Doctor
+Surgeon
+Witch
+Scribe

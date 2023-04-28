@@ -12,18 +12,45 @@
 
     <!-- Form managed by npcGenerate.js -->
     <form name="generate" id="generateForm" method="post">        
-        Name: <input type="text" name="name"><br>
-        Species: <input type="text" name="species"><br>
-        Job: <input type="text" name="job"><br>
-        Visual Description: <input type="text" name="description"><br>
-        Personality: <input type="text" name="personality"><br>       
+        First Name* 
+        <input type="text" name="firstname" required>
+        <button type="button" class="generate-form__button-random">Randomise</button><br>
+        Last Name
+        <input type="text" name="lastname">
+        <button type="button" class="generate-form__button-random">Randomise</button><br>
+        Species* 
+        <select name="species">
+          <option value="human">Human</option>
+          <option value="elf">Elf</option>
+          <option value="dwarf">Dwarf</option>
+          <option value="gnome">Gnome</option>
+          <option value="halfelf">Half Elf</option>
+          <option value="halfling">Halfling</option>
+          <option value="dragonborn">Dragonborn</option>
+          <option value="halforc">Half-Orc</option>
+          <option value="tiefling">Tiefling</option>
+          <option value="orc">Orc</option>
+          <option value="goblin">Goblin</option>
+        </select><br>        
+        Job* 
+        <input type="text" name="job" required>
+        <button type="button" class="generate-form__button-random">Randomise</button><br>
+        Visual Description:
+        <input type="text" name="description"><button type="button" class="generate-form__button-random">Randomise</button><br>
+        Personality* 
+        <input type="text" name="personality" required>
+        <button type="button" class="generate-form__button-random">Randomise</button><br>   
+        Access Code*
+        <input type="text" name="access" required><br>
+
         <input type="submit" value="Generate" id="generateButton">
     </form>
 
     <!-- Initial contents managed by npcGenerate.js -->
     <div id="npc-container">
         <!-- Content changes managedby npcInteract.js -->
-
+        <div id="response"></div>
+        </div>
         <!-- NPC image and interactions rendered here -->
 
         <!-- Form managed by npcInteract.js -->
@@ -34,6 +61,7 @@
     </div>    
 </body>
 
-<script src="scripts/npcGenerate.js" type="application/javascript"></script>
+<script src="scripts/buttonCreateNPC.js" type="application/javascript"></script>
+<script src="scripts/buttonRandomizeAttribute.js" type="application/javascript"></script>
 
 </html>

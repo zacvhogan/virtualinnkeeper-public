@@ -7,8 +7,7 @@ generateButton.addEventListener("click", event => {
     // Generate formData object for use in later POST request
     let formData = buildQuery();
 
-    // Perform query to API and store result
-    // Await
+    // Perform query to API and store result  
     let response = sendQuery(formData);
 
     // Render response result in viewport
@@ -21,6 +20,8 @@ generateButton.addEventListener("click", event => {
 function buildQuery(){
     let form = document.querySelector("#generateForm");
     let formData = new FormData(form);        
+    formData.append("queryType", "generate");
+    console.log(formData);
     return formData;
 }
 
@@ -30,12 +31,16 @@ async function sendQuery(formData){
         // Note: Fetch + POST uses a FormData object rather than a GET query string URL
     let response = await fetch("./php/frontController.php", {method: 'POST', body: formData});
     let data = await response.text();
-    console.log(data);    
+    console.log("Output=" + data);   
+    
+    let responseBox = document.querySelector("#response");
+    responseBox.innerHTML = data;
 
-    // Return response object
+    
 }
 
 
-function processResponse(){
+function processResponse(response){
+
     
 }
