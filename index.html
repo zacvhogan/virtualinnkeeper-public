@@ -7,6 +7,8 @@
     <title>Virtual Innkeeper - an AI NPC tool for tabletop games</title>
     <link rel="stylesheet" href="style.css">
   </head>
+
+
   <body>
     <h1>Virtual Innkeeper</h1>
 
@@ -40,28 +42,26 @@
         Personality* 
         <input type="text" name="personality" required>
         <button type="button" class="generate-form__button-random">Randomise</button><br>   
-        Access Code*
-        <input type="text" name="access" required><br>
-
         <input type="submit" value="Generate" id="generateButton">
     </form>
 
     <!-- Initial contents managed by npcGenerate.js -->
     <div id="npc-container">
         <!-- Content changes managedby npcInteract.js -->
-        <div id="response"></div>
-        </div>
+        <div id="response"><p>adsf</p></div>
+    </div>
         <!-- NPC image and interactions rendered here -->
 
         <!-- Form managed by npcInteract.js -->
-        <form name="speak" method="post">
+        <form name="interact" id="interactForm" method="post">
             <input type="text" name="userInput" placeholder="Say something">
-            <input type="submit" value="Speak">
+            <input type="submit" value="Speak" id="interactButton">
         </form>
     </div>    
 </body>
 
 <script src="scripts/buttonCreateNPC.js" type="application/javascript"></script>
+<script src="scripts/buttonInteractNPC.js" type="application/javascript"></script>
 <script src="scripts/buttonRandomizeAttribute.js" type="application/javascript"></script>
 
 </html>
