@@ -2,18 +2,31 @@
 
     const interactForm = document.querySelector("#interactForm");
     const interactButton = document.querySelector("#interactButton");
+    const responseBox = document.querySelector("#response"); 
+    const form = document.querySelector("#interactForm");
+    const userInput = document.querySelector("#userInput");
 
 
+    // On Click
     interactButton.addEventListener("click", event => {
         event.preventDefault();   
         
         // Generate formData object for use in later POST request
         let formData = buildQuery();
 
-        // Perform query to API and store result  
+        // Render query to DOM
+        let responseElement = document.createElement("p");     
+        responseElement.classList.add("message-query");   
+        responseElement.innerHTML = document.querySelector("#userInput").value;
+        responseBox.appendChild(responseElement);  
+
+        // Clear user input
+        userInput.value = "";
+
+        // Send query to API and store result  
         let response = sendQuery(formData);
 
-        // Render response result in viewport
+        // TODO: Render response result in viewport
         // Store response in user's localstorage for later use in building response history for chat
         // Show error if query incorrect
         processResponse(response);
@@ -21,7 +34,8 @@
 
 
     function buildQuery(){    
-        let form = document.querySelector("#interactForm");
+        
+        userInput.value = `"${userInput.value}"`;
         let formData = new FormData(form);        
         formData.append("queryType", "interact");
         return formData;
@@ -35,10 +49,12 @@
         let data = await response.text();  
         
         // Append returned data response to DOM #response object
-        let responseBox = document.querySelector("#response");       
-        let responseElement = document.createElement("p");        
+              
+        let responseElement = document.createElement("p");     
+        responseElement.classList.add("message-response");   
         responseElement.innerHTML = data;
         responseBox.appendChild(responseElement);  
+        console.log(data);
     }
         
 
@@ -47,4 +63,7 @@
 
         
     }
+
+
+
 }());

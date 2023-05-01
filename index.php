@@ -1,3 +1,21 @@
+<?php
+
+// //TODO: Clear previous cookies HOW?
+//  setcookie("test", "testvalue", 0, "/");
+//  // For each cookie in $_COOKIE array
+//  foreach($_COOKIE as $key=>$value){
+//   // Find cookies with key name containing VINPCMESSAGE
+//   echo "iterate";
+//     if (str_contains($key, "VINPCMessage"))
+//     {
+//       echo "found";
+//         // Delete cookie by setting expiry date to the past
+//         setcookie($key, "", time() - 3600);
+        
+//     }
+//   } 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,12 +23,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Virtual Innkeeper - an AI NPC tool for tabletop games</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
 
   <body>
-    <h1>Virtual Innkeeper</h1>
+    <h1>Virtual Innkeeper Alpha</h1>
 
     <!-- Form managed by npcGenerate.js -->
     <form name="generate" id="generateForm" method="post">        
@@ -47,14 +65,14 @@
 
     <!-- Initial contents managed by npcGenerate.js -->
     <div id="npc-container">
-        <!-- Content changes managedby npcInteract.js -->
-        <div id="response"><p>adsf</p></div>
+        <!-- Content changes managed by npcInteract.js -->
+        <div id="response"><p></p></div>
     </div>
         <!-- NPC image and interactions rendered here -->
 
         <!-- Form managed by npcInteract.js -->
         <form name="interact" id="interactForm" method="post">
-            <input type="text" name="userInput" placeholder="Say something">
+            <input type="text" name="userInput" id="userInput" placeholder="Say something">
             <input type="submit" value="Speak" id="interactButton">
         </form>
     </div>    

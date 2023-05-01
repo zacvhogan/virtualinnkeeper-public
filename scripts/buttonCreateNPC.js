@@ -38,7 +38,8 @@
         
 
         let responseBox = document.querySelector("#response");       
-        let responseElement = document.createElement("p");        
+        let responseElement = document.createElement("p");  
+        responseElement.classList.add("message-response");
         responseElement.innerHTML = data;
         responseBox.appendChild(responseElement);  
 
