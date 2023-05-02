@@ -28,6 +28,7 @@
 
 
   <body>
+    <p class="alert-error">Issue: AI may remember and respond to previous conversations it has had with you under the identity of other characters. See Github issue <a target="_blank" href="https://github.com/zacvhogan/virtualinnkeeper-public/issues/1#issue-1691459549">link</a><p>
     <h1>Virtual Innkeeper Alpha</h1>
 
     <!-- Form managed by npcGenerate.js -->
@@ -81,5 +82,6 @@
 <script src="scripts/buttonCreateNPC.js" type="application/javascript"></script>
 <script src="scripts/buttonInteractNPC.js" type="application/javascript"></script>
 <script src="scripts/buttonRandomizeAttribute.js" type="application/javascript"></script>
+<script src="scripts/clearSessionStorage.js" type="application/javascript"></script>
 
 </html>
