@@ -30,13 +30,13 @@
 
     <!-- Form managed by npcGenerate.js -->
     <form name="generate" id="generateForm" method="post">        
-        First Name* 
+        First Name
         <input type="text" name="firstname" required>
         <button type="button" class="generate-form__button-random">Randomise</button><br>
         Last Name
         <input type="text" name="lastname">
         <button type="button" class="generate-form__button-random">Randomise</button><br>
-        Species* 
+        Species
         <select name="species">
           <option value="human">Human</option>
           <option value="elf">Elf</option>
@@ -50,14 +50,13 @@
           <option value="orc">Orc</option>
           <option value="goblin">Goblin</option>
         </select><br>        
-        Job* 
+        Job
         <input type="text" name="job" required>
         <button type="button" class="generate-form__button-random">Randomise</button><br>
-        Visual Description:
-        <input type="text" name="description"><button type="button" class="generate-form__button-random">Randomise</button><br>
-        Personality* 
-        <input type="text" name="personality" required>
-        <button type="button" class="generate-form__button-random">Randomise</button><br>   
+        Visual Description:<br>
+        <textarea type="text" name="description" rows="6"></textarea><br>
+        Personality<br>
+        <textarea type="text" name="personality" rows="6"></textarea><br>   
         <input type="submit" value="Generate" id="generateButton">
     </form>
 

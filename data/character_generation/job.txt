@@ -1,64 +1,128 @@
-Innkeeper
-Barkeeper
-Hunter
-Butcher
-Baker
-Merchant
-Travelling Merchant
-King
-Lord
-Queen
-Dutchess
-Assassin
-Soldier
-Warrior
-Priest
-Farmer
-Mayor
-Guard
-Witch Hunter
 Wizard
-Dark Wizard
-Horsehand
-Farmhand
-Builder
-Concubine
-Butler
-Clerk
-Boatman
-Fisherman
-Brewer
-Doctor
-Surgeon
+Sorcerer
 Witch
-Scribe
-Paladin
-Artist
-Jester
-Cook
-Servant
-Whore
-Tailor
-Tanner
-Blacksmith
-Goldsmith
-Silversmith
-Shoemaker
-Sculptor
-Bowyer
-Miner
+Enchanter
 Alchemist
-Apothecary
-Cultist
-Herbalist
-Magician
-Barber
-Beggar
-Thief
+Druid
+Necromancer
+Demonologist
+Summoner
+Warlock
+Mage
+Priest
+Paladin
+Cleric
+Monk
+Bard
 Rogue
+Assassin
+Thief
+Ranger
+Knight
+Soldier
+Mercenary
+Gladiator
+Blacksmith
+Armorer
+Weaponsmith
+Carpenter
+Woodworker
+Stone mason
+Miner
+Farmer
+Rancher
+Fisherman
 Sailor
-Actor
-Herald
+Pirate
+Navigator
+Cartographer
+Innkeeper
+Merchant
+Trader
 Courier
-Firefighter
-Mason
+Hunter
+Tracker
+Beast master
+Tamer
+Zookeeper
+Healer
+Apothecary
+Herbalist
+Wise woman/man
+Oracle
+Seer
+Prophet
+Augur
+Astrologer
+Medium
+Ghost hunter
+Exorcist
+Investigator
+Detective
+Thief-taker
+Judge
+Lawyer
+Executioner
+Torturer
+Bailiff
+Jester
+Fool
+Mime
+Puppeteer
+Actor
+Director
+Playwright
+Dancer
+Singer
+Musician
+Composer
+Painter
+Sculptor
+Glassblower
+Weaver
+Tailor
+Shoemaker
+Hatter
+Jeweler
+Clockmaker
+Architect
+Engineer
+Inventor
+Scientist
+Philosopher
+Scholar
+Librarian
+Scribe
+Translator
+Cartographer
+Historian
+Geographer
+Philologist
+Cryptographer
+Spy
+Saboteur
+Guerrilla
+Strategist
+Tactician
+General
+Commander
+Mercenary captain
+Bodyguard
+Duelist
+Gladiator trainer
+Wrestler
+Fencer
+Archer
+Marksman
+Horse breeder
+Falconer
+Dog trainer
+Lion tamer
+Dragon slayer
+Monster hunter
+Giant slayer
+Troll hunter
+Orc slayer
+Undead hunter
+Vampire hunter
+Demon hunter

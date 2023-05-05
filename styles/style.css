@@ -1,5 +1,6 @@
 html {
     width: 80vw;
+    max-width: 800px;
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -37,10 +38,10 @@ html {
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .visible {
-    visibility: visible !important;
+    visibility: block !important;
 }
 

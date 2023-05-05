@@ -10,9 +10,9 @@
         event.preventDefault(); 
              
         
-        // Hide generate button        
-        document.querySelector("#generateButton").classList.add("hidden");
-        document.querySelector("#response").innerHTML = "Generating...";
+        // Hide generate form        
+        document.querySelector("#generateForm").classList.add("hidden");
+        document.querySelector("#response").innerHTML = "Summoning your NPC from the void. This may take a minute...";
 
         // Generate formData object for use in later POST request
         let formData = buildQuery();
@@ -47,6 +47,7 @@
 
     function processResponse(data){
 
+        
         console.log(data);
         // DOM elements
         let responseBox = document.querySelector("#response");       
@@ -57,6 +58,7 @@
         responseElement.innerHTML = data;
         responseBox.appendChild(responseElement);   
         document.querySelector("#interactForm").classList.add("visible");
+        document.querySelector("#interactForm").classList.remove("hidden");
         
     }
 
