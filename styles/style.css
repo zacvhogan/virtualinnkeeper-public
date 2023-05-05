@@ -36,3 +36,11 @@ html {
     color: red;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible !important;
+}
+

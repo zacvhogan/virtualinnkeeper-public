@@ -17,14 +17,10 @@
         responseElement.classList.add("message-query");   
         responseElement.innerHTML = document.querySelector("#userInput").value;
         responseBox.appendChild(responseElement);  
-
-        // Clear user input
-        userInput.value = "";
-
+        
         // Build formData object for use in later POST request
         let formData = buildQuery();
     
-
         // Send query to API and store result  
         let response = sendQuery(formData);
 
@@ -44,29 +40,8 @@
         // Add query type identifier to formData
         formData.append("queryType", "interact");    
         
-        // send input to sessionStorage
-        sessionStorage.setItem("VInnInteract_" + sessionStorage.getItem("messageCount") + "_q" ,formData.get('userInput'));
-        
-        // Increment messageCount in sessionStorage
-        let messageCount = sessionStorage.getItem("messageCount");
-        messageCount++;
-        sessionStorage.setItem("messageCount", messageCount);        
-
-        // sessionStorage to array and sorted
-        let messageHistory = []
-        for(let i = 0; i < sessionStorage.length; i++){                               
-            messageHistory.push([sessionStorage.key(i), sessionStorage.getItem(sessionStorage.key(i))]);  
-        }
-        messageHistory.sort();
-
-        // compile ALL sessionStorage to send in query        
-        for(let i = 0; i < messageHistory.length; i++){                               
-            formData.append(messageHistory[i, 0], messageHistory[i, 1]);  
-        }        
-        formData.append("messageHistory", messageHistory);
-        console.log(messageHistory);
-
         return formData;
+       
     }
 
 
