@@ -1,7 +1,11 @@
-html {
+* {
+    box-sizing: border-box;
+}
+
+body {
     width: 80vw;
     max-width: 800px;
-    margin: auto;
+    margin: auto;    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -9,6 +13,7 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
+    background: rgb(235, 235, 235);
 }
 
 .message-query {
@@ -16,7 +21,7 @@ html {
     display: block;
     text-align: right; 
     color: darkgreen;
-    background: lightgreen;
+    background: rgb(128, 221, 128);
     padding: 5px;
     border-radius: 4px;
     width: 80%;        
@@ -42,6 +47,59 @@ html {
 }
 
 .visible {
-    visibility: block !important;
+    display: flex;
 }
+
+.interact-form {    
+    width: 100%;
+    align-content: stretch;
+}
+
+.interact-form__input {
+    width: 100%;
+}
+
+button, input[type=submit]  {
+    height: 40px;
+    padding: 10px;
+}
+
+input, select, textarea {
+    min-height: 40px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.generate-form__field-container {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.field-container__input {
+    display: flex;
+}
+
+.generate-form__button-random {    
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    padding: 0;    
+    background: none;
+    
+}
+
+.interact-form__submit {
+    width: 200px;
+}
+
+.generate-form__button-random > i {
+    margin: auto;
+}
+
+
+
+
 

@@ -1,10 +1,10 @@
 (function (){
 
-    const interactForm = document.querySelector("#interactForm");
-    const interactButton = document.querySelector("#interactButton");
+    const interactForm = document.querySelector(".interact-form");
+    const interactButton = document.querySelector(".interact-form__submit");
     const responseBox = document.querySelector("#response"); 
-    const form = document.querySelector("#interactForm");
-    const userInput = document.querySelector("#userInput");
+    const form = document.querySelector(".interact-form");
+    const userInput = document.querySelector(".interact-form__input");
 
 
     // On Click
@@ -15,14 +15,14 @@
         // Render query input to DOM
         let responseElement = document.createElement("p");     
         responseElement.classList.add("message-query");   
-        responseElement.innerHTML = document.querySelector("#userInput").value;
+        responseElement.innerHTML = document.querySelector(".interact-form__input").value;
         responseBox.appendChild(responseElement);  
         
         // Build formData object for use in later POST request
         let formData = buildQuery();
     
         // Send query to API and store result  
-        let response = sendQuery(formData);
+        sendQuery(formData);
 
         // TODO: Render response result in viewport
         // Store response in user's localstorage for later use in building response history for chat
@@ -37,6 +37,8 @@
         userInput.value = `"${userInput.value}"`;
         // Create formData object and pass in submitted form results
         let formData = new FormData(form);        
+        userInput.value = "";
+
         // Add query type identifier to formData
         formData.append("queryType", "interact");    
         

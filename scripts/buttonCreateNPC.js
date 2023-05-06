@@ -1,7 +1,7 @@
 (function(){
 
-    const generateForm = document.querySelector("#generateForm");
-    const generateButton = document.querySelector("#generateButton");
+    const generateForm = document.querySelector(".generate-form");
+    const generateButton = document.querySelector(".generate-form__submit");
 
 
 
@@ -11,7 +11,7 @@
              
         
         // Hide generate form        
-        document.querySelector("#generateForm").classList.add("hidden");
+        document.querySelector(".generate-form").classList.add("hidden");
         document.querySelector("#response").innerHTML = "Summoning your NPC from the void. This may take a minute...";
 
         // Generate formData object for use in later POST request
@@ -57,8 +57,8 @@
         // Set responseElement text to data[1] (API response)
         responseElement.innerHTML = data;
         responseBox.appendChild(responseElement);   
-        document.querySelector("#interactForm").classList.add("visible");
-        document.querySelector("#interactForm").classList.remove("hidden");
+        document.querySelector(".interact-form").classList.add("visible");
+        document.querySelector(".interact-form").classList.remove("hidden");
         
     }
 
