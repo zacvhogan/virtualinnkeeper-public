@@ -125,7 +125,7 @@ body {
     width: 80%;
 }
 
-.message-response > p {
+.message-response > * {
     color: navy;
 }
 
