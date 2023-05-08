@@ -1,3 +1,7 @@
+/* This is largely terrible
+TODO: Refactor and tidy up selectors and selector heirarchy once design finalised */
+
+
 
 @font-face {
     font-family: "Bree Serif";
@@ -5,6 +9,9 @@
     url("../assets/fonts/BreeSerif-Regular.ttf") 
     format("truetype");
   }
+
+
+
 
   :root {
     --main-bg-color: rgb(10, 10, 24);
@@ -16,7 +23,13 @@
 a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
-    font-family: inerit;
+    font-family: inherit;
+    transition: 0.2s;
+    
+}
+
+a:hover {
+    color: rgb(230, 138, 33);
 }
 
 
@@ -27,10 +40,10 @@ a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html {
-    height: 100vh;
+body {
+    min-height: 100vh;
     background: rgb(69,47,41);
-background: linear-gradient(317deg, rgba(69,47,41,1) 0%, rgba(51,36,39,1) 6%, rgba(36,27,38,1) 17%, rgba(17,16,36,1) 100%);
+    background: linear-gradient(317deg, rgba(69,47,41,1) 0%, rgba(51,36,39,1) 6%, rgba(36,27,38,1) 17%, rgba(17,16,36,1) 100%);
 
 }
 
@@ -43,7 +56,8 @@ background: linear-gradient(317deg, rgba(69,47,41,1) 0%, rgba(51,36,39,1) 6%, rg
 }
 
 nav {
-    display: flex;       
+    display: flex;    
+    flex-wrap: wrap;   
     justify-content: space-between;
     align-items: baseline;     
     width: 80vw; 
@@ -72,16 +86,22 @@ nav {
 
 h1 {
     margin: 10px;
+    line-height: 60%;
 }
 
-.title__virtual {    
+h2 {
+    font-size: 40px;
+    color: rgb(49, 56, 63);
+}
+
+.title__virtual {
     color: rgb(252, 252, 252);
-    
+    font-size: 30px;
 }
 
 .title__version {
     font-size: 0.6em;
-    color: grey;
+    color: #9a6d6d;
     vertical-align: text-top;
     font-weight: 600;
 }
@@ -94,39 +114,45 @@ body {
     width: 80vw;
     max-width: 800px;
     margin: auto;  
-        
+    margin-bottom: 200px;        
+}
+
+label {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(114, 94, 66)
 }
 
 #response {
     position: relative;
     display: flex;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.3);
+    flex-direction: column;    
+       
 }
 
 .message-query {
     position: relative;
     display: block;
-    text-align: right; 
-    color: darkgreen;
-    background: rgb(128, 221, 128);
+    text-align: right;
+    color: #a4cbe3;
+    background: rgb(46 51 70);
     padding: 5px;
     border-radius: 4px;
-    width: 80%;        
+    width: 80%;
     align-self: flex-end;
 }
 
 
 .message-response {
-    color: navy;
-    background: lightblue;
+    color: #5b2b0f;
+    background: #ead5a9;
     padding: 5px;
     border-radius: 4px;
     width: 80%;
 }
 
 .message-response > * {
-    color: navy;
+    color: navy !important;
 }
 
 .alert-error {
@@ -178,6 +204,31 @@ select {
     color: rgb(105, 104, 102);
 }
 
+
+
+.fade-out  {
+    -webkit-animation: fadeinout 0.5s linear forwards;
+    animation: fadeinout 0.5s linear forwards;
+}
+
+.fade-in  {
+    -webkit-animation: fadeinout 0.5s linear backwards;
+    animation: fadeinout 0.5s linear backwards;
+}
+
+
+
+@keyframes fadeinout {
+    0% {
+        opacity: 1;        
+    }      
+    100% {
+        opacity: 0;        
+    }
+}
+
+
+
 /* TODO: for grid-template-columns auto fill make more maintainable by removing hard px limits */
 .generate-form__field-container {
     display: grid;
@@ -193,6 +244,7 @@ select {
     box-shadow: 0px 0px 14px 4px rgba(255,211,148,0.55);
     border-radius: var(--form-border-radius);
     width: 100%;
+    border: 1px solid rgb(206, 170, 94);
 }
 
 input[type=submit] {
@@ -231,8 +283,7 @@ input:focus, textarea:focus {
 
 
 .generate-form__button-random {       
-    padding: 0;  
-    margin-left: 5px;  
+    padding: 0;       
     background: none;  
     border: none;  
     height: 45px;

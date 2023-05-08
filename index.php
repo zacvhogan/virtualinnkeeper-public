@@ -37,10 +37,10 @@
   <body>
     <div class="nav_parent">
       <nav>      
-          <h1 class="nav__title"><a href="/virtualinnkeeper"><span class="title__virtual">Virtual</span> Innkeeper <span class="title__version">Alpha</span></a></h1>
+          <h1 class="nav__title"><a href="/virtualinnkeeper"><span class="title__virtual">Virtual</span>Innkeeper&nbsp;<span class="title__version">Alpha</span></a></h1>
           <ul class="nav__nav-list">
-            <li class="nav-list__item"> </li>
-            <li class="nav-list__item"> </li>
+            <li class="nav-list__item"><a href="https://github.com/users/zacvhogan/projects/3/views/2" target="_blank">Future</a></li>
+            <li class="nav-list__item"><a href="https://github.com/zacvhogan/virtualinnkeeper-public" target="_blank">Github</a></li>
           </ul>     
       </nav>  
     </div>
@@ -48,7 +48,7 @@
     <div id="app"> 
       <!-- Form managed by npcGenerate.js -->
 
-      <h2>Meet your story's next character. . .</h2>
+      <h2>Introduce your players to...</h2>
       <form name="generate" class="generate-form" method="post"> 
         <div class="generate-form__field-container">  
 
@@ -66,6 +66,17 @@
               <input type="text" name="lastname" id="lastname" autocomplete="off" placeholder="Eg, Weasley">
               <button type="button" class="generate-form__button-random"><img src="assets/icon/dice-three-solid.svg"></button><br>
             </div>
+          </div>
+
+          <div>
+            <label for="gender">Gender</label><br>
+            <div class="field-container__input">
+              <select name="gender" id="gender">
+                <option value="nonbinary">Non-binary</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>             
+              </select><br>   
+            </div>     
           </div>
           
           <div>
@@ -88,17 +99,6 @@
           </div>
 
           <div>
-            <label for="gender">Gender</label><br>
-            <div class="field-container__input">
-              <select name="gender" id="gender">
-                <option value="nonbinary">Non-binary</option>
-                <option value="female">Female</option>
-                <option value="male">Male</option>             
-              </select><br>   
-            </div>     
-          </div>
-
-          <div>
             <label for="job">Job</label><br>
             <div class="field-container__input">
               <input type="text" name="job" id="job" autocomplete="off" placeholder="Eg, Ranger" required>
@@ -109,17 +109,17 @@
           <div>
             <label for="gamerole">Game role</label><br>
             <div class="field-container__input">
-              <input type="text" name="gamerole" id="gamerole" autocomplete="off" placeholder="Eg, to trick the player into buying a cursed artifact." required>            
+              <input type="text" name="gamerole" id="gamerole" autocomplete="off" placeholder="Eg, to sell a cursed artifact." required>            
             </div>
           </div>
 
           <div>
             <label for="description">Visual Description</label><br>
-            <textarea type="text" name="description" id="description" autocomplete="off" placeholder="Eg, Tall, muscular, with a big beard. Wears shorts and a big brown jacket."rows="6"></textarea><br>
+            <textarea type="text" name="description" id="description" autocomplete="off" placeholder="Eg, tall, muscular. Wears steel plate armour."rows="6"></textarea><br>
           </div>
           <div>
             <label for="personality"> Personality</label><br>
-            <textarea type="text" name="personality" id="personality" autocomplete="off" placeholder="Eg, determined, but easily scared. Quick to anger at the mention of their employer." rows="6"></textarea><br>   
+            <textarea type="text" name="personality" id="personality" autocomplete="off" placeholder="Eg, honourable. Scared of spiders." rows="6"></textarea><br>   
           </div>  
         </div>
           <input type="submit" value="Generate" class="generate-form__submit">
