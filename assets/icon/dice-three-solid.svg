@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 448 448"
+   version="1.1"
+   id="svg20"
+   sodipodi:docname="dice-three-solid.svg"
+   width="448"
+   height="448"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     id="namedview22"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.4183568"
+     inkscape:cx="223.14555"
+     inkscape:cy="203.75692"
+     inkscape:window-width="2560"
+     inkscape:window-height="1203"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg20" />
+  <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <path
+     d="m 79.099346,20.152026 c -32.124257,0 -58.242279,26.118022 -58.242279,58.242279 V 369.6057 c 0,32.12425 26.118022,58.24227 58.242279,58.24227 H 370.31074 c 32.12425,0 58.24227,-26.11802 58.24227,-58.24227 V 78.394305 c 0,-32.124257 -26.11802,-58.242279 -58.24227,-58.242279 z"
+     id="path18"
+     style="fill:none;stroke:#808080;stroke-width:35.801;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+     sodipodi:nodetypes="sssssssss" />
+  <path
+     d="m 138.24977,110.53045 c 16.08317,0 29.12113,13.03798 29.12113,29.12115 0,16.08316 -13.03796,29.12114 -29.12113,29.12114 -16.08317,0 -29.12113,-13.03798 -29.12113,-29.12114 0,-16.08317 13.03796,-29.12115 29.12113,-29.12115 z m 58.24228,116.48457 c 0,-16.08317 13.03798,-29.12113 29.12114,-29.12113 16.08316,0 29.12114,13.03796 29.12114,29.12113 0,16.08317 -13.03798,29.12113 -29.12114,29.12113 -16.08316,0 -29.12114,-13.03796 -29.12114,-29.12113 z m 116.48456,58.24228 c 16.08317,0 29.12113,13.03798 29.12113,29.12114 0,16.08316 -13.03796,29.12114 -29.12113,29.12114 -16.08317,0 -29.12113,-13.03798 -29.12113,-29.12114 0,-16.08316 13.03796,-29.12114 29.12113,-29.12114 z"
+     style="fill:#808080;stroke:none;stroke-width:35.801;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;fill-opacity:1"
+     id="path974" />
+</svg>

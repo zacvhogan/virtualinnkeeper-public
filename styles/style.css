@@ -1,19 +1,107 @@
+
+@font-face {
+    font-family: "Bree Serif";
+    src: local("Bree Serif"), 
+    url("../assets/fonts/BreeSerif-Regular.ttf") 
+    format("truetype");
+  }
+
+  :root {
+    --main-bg-color: rgb(10, 10, 24);
+    --form-border-radius: 8px;
+    --secondary-color-gold: rgb(221, 161, 32);
+  }
+
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    font-family: inerit;
+}
+
+
 * {
     box-sizing: border-box;
+    
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    height: 100vh;
+    background: rgb(69,47,41);
+background: linear-gradient(317deg, rgba(69,47,41,1) 0%, rgba(51,36,39,1) 6%, rgba(36,27,38,1) 17%, rgba(17,16,36,1) 100%);
+
+}
+
+.nav_parent {
+    display: flex;    
+    justify-content: center;
+    border-bottom: var(--secondary-color-gold) 2px solid;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+nav {
+    display: flex;       
+    justify-content: space-between;
+    align-items: baseline;     
+    width: 80vw; 
+    max-width: 800px;
+    height: auto; 
+}
+
+.nav__nav-list{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 30px;
+}
+.nav-list__item {
+    display: block;
+    margin-left: 30px;        
+    vertical-align: middle;
+}
+
+.nav__title {
+    font-family: 'Bree Serif', sans-serif;
+    font-size: 36px;
+    font-weight: 100;    
+}
+
+h1 {
+    margin: 10px;
+}
+
+.title__virtual {    
+    color: rgb(252, 252, 252);
+    
+}
+
+.title__version {
+    font-size: 0.6em;
+    color: grey;
+    vertical-align: text-top;
+    font-weight: 600;
 }
 
 body {
+    margin: 0;
+}
+
+#app {
     width: 80vw;
     max-width: 800px;
-    margin: auto;    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;  
+        
 }
 
 #response {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: rgb(235, 235, 235);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .message-query {
@@ -55,21 +143,36 @@ body {
     align-content: stretch;
 }
 
-.interact-form__input {
-    width: 100%;
-}
 
 button, input[type=submit]  {
     height: 40px;
     padding: 10px;
+    cursor: pointer;
 }
 
+
+
+
+
+/* All form inputs */
 input, select, textarea {
-    min-height: 40px;
+    height: 45px;
     width: 100%;
-    padding: 10px;
-    border: 1px solid black;
-    font-size: 1rem;
+    padding: 10px;    
+    border: none;
+    font-size: 1rem; 
+    background: none;    
+}
+
+
+
+select {
+    background: var(--main-bg-color);
+    border-radius: var(--form-border-radius);
+}
+
+::placeholder {
+    color: rgb(105, 104, 102);
 }
 
 .generate-form__field-container {
@@ -78,26 +181,73 @@ input, select, textarea {
     grid-template-columns: 1fr 1fr; 
 }
 
-.field-container__input {
+.field-container__input, textarea, input[type=submit]{
     display: flex;
+    margin-top: 10px;
+    -webkit-box-shadow: 0px 0px 14px 4px rgba(255,211,148,0.55); 
+    box-shadow: 0px 0px 14px 4px rgba(255,211,148,0.55);
+    border-radius: var(--form-border-radius);
+    width: 100%;
 }
 
-.generate-form__button-random {    
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
-    padding: 0;    
-    background: none;
-    
+input[type=submit] {
+    transition: 0.2s;
+    display: block;
+    font-size: 30px;
+    height: auto;
 }
+
+input[type=submit]:hover, .field-container__input:hover, textarea:hover {    
+    -webkit-box-shadow: 0px 0px 14px 4px rgba(255, 208, 142, 0.8); 
+    box-shadow: 0px 0px 14px 4px rgba(255,211,148,0.8);
+}
+
+
+input:focus, textarea:focus {
+    outline: 0;
+}
+
+#personality, #description {
+    height: 5em;
+}
+
+
+
 
 .interact-form__submit {
-    width: 200px;
+    width: 200px !important;
+    height: 100%;
+    margin: 0 !important;
+    -webkit-box-shadow: none !important; 
+    box-shadow: none !important;
+    border-left: 2px solid white;
 }
 
-.generate-form__button-random > i {
+
+
+.generate-form__button-random {       
+    padding: 0;  
+    margin-left: 5px;  
+    background: none;  
+    border: none;  
+    height: 45px;
+    width: 45px;
+}
+
+.generate-form__button-random > img {    
+    height: 35px;
+    width: 35px;   
     margin: auto;
 }
+
+.interact-form__input {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    -webkit-box-shadow: none !important; 
+    box-shadow: none !important;
+}
+
 
 
 
