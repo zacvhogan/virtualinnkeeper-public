@@ -178,10 +178,12 @@ select {
     color: rgb(105, 104, 102);
 }
 
+/* TODO: for grid-template-columns auto fill make more maintainable by removing hard px limits */
 .generate-form__field-container {
     display: grid;
     gap: 25px;
-    grid-template-columns: 1fr 1fr; 
+    /* grid-template-columns: 1fr 1fr;  */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .field-container__input, textarea, input[type=submit]{
