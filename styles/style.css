@@ -122,8 +122,11 @@ body {
     background: lightblue;
     padding: 5px;
     border-radius: 4px;
-    width: 80%;
-    
+    width: 80%;    S
+}
+
+.message-response > p {
+    color: navy;
 }
 
 .alert-error {
@@ -167,7 +170,7 @@ input, select, textarea {
 
 
 select {
-    background: var(--main-bg-color);
+    background: rgb(31,24,37);
     border-radius: var(--form-border-radius);
 }
 
