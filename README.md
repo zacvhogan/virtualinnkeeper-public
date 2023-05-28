@@ -1,29 +1,10 @@
-Todo
+Initial MVP built in HTML, CSS, Javascript, PHP, running on a LAMP stack. 
 
-INITIAL
+Current work: rewriting the project using React(NextJS) to ensure application is easier to maintain and easier to scale as new features are added.
 
--UI min product
---Basic form
---PHP to update page content with AI reponses
-
--AI Integration
---Use PHP to query OpenAI (DallE, ChatGPT) using user input
----Key in Apache Envvars
---Provide results via an API that React can interact with
+Roadmap: https://github.com/users/zacvhogan/projects/3
 
 
+Virtual Innkeeper
+A tool that leverages OpenAI’s GPT-3.5 to allow users to design and engage with a virtual NPC. Designed for tabletop RPG game-masters who require dynamic and fresh non-player characters for their group to interact with.
 
-FUTURE
-
--UI Advanced
---Wireframe
---Build in React
-
-
-
-
-=====
-
-Form interactions
--HTML submit target is queries.php
--Queries.php queries backend. Backend processes query, returns HTML containing query results. JS inserts this HTML into page
